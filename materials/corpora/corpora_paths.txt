@@ -1,0 +1,3 @@
+SdeWaC: /mount/resources/corpora/web-corpora/WaCKy/sdewac/source/sdewac-v3-utf8.tagged
+
+PukWaC: /mount/resources/corpora/web-corpora/WaCKy/PukWaC/
