@@ -27,5 +27,5 @@ For successfull usage, it is recommended to execute the scripts in the following
   > - classification.py
 
 ## Test corpora
-For testing purposes, the two smaller test corpora in materials/corpora/ can be used.
+For testing purposes, the two test corpora in materials/corpora/ can be used.
 They are smaller parts of the original SdeWaC and PukWaC copora and allow to test the code with a short runtime.
