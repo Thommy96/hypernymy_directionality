@@ -1,0 +1,8 @@
+On the sever of Institut für Maschinelle Sprachverarbeitung, Stuttgart
+
+GermaNet Version 11: /projekte/semrel/Resources/GermaNet/GN_V110_Lists/N_hypernyms.txt
+
+WordNet Version 3: /resources/data/WordNet/WordNet-3.0_extract/hyp_nouns.txt
+
+BLESS, EVALution, Lenci/Benotto, Weeds:
+/projekte/semrel/Resources/Hypernymy/UnsupervisedHypernymy-MasterShwartz
