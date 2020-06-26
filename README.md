@@ -37,3 +37,5 @@ The corpora are located on the server of the IMS (Institut für Maschinelle Spra
 ## Data sets
 Paths for all data sets used in the thesis can be found in materials/datasets/
 All data sets are located on the server of the IMS (Institut für Maschinelle Sprachverarbeitung), Stuttgart
+
+## Required packages
