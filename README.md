@@ -31,11 +31,17 @@ For testing purposes, the two test corpora in materials/corpora/ can be used.
 They are smaller parts of the original SdeWaC and PukWaC copora and allow to test the code with a short runtime.
 
 ## Corpora
-Paths for SdeWaC and PukWaC can be found in materials/corpora/corpora_paths.txt
+File paths for SdeWaC and PukWaC can be found in materials/corpora/corpora_paths.txt
 The corpora are located on the server of the IMS (Institut für Maschinelle Sprachverarbeitung), Stuttgart
 
 ## Data sets
-Paths for all data sets used in the thesis can be found in materials/datasets/
+File paths for all data sets used in the thesis can be found in materials/datasets/
 All data sets are located on the server of the IMS (Institut für Maschinelle Sprachverarbeitung), Stuttgart
 
 ## Required packages
+- pickle
+- docopt
+- tqdm
+- sklearn
+- graphviz
+- numpy
