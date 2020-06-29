@@ -1,8 +1,35 @@
 On the sever of Institut für Maschinelle Sprachverarbeitung, Stuttgart
+-------------
 
-GermaNet Version 11: /projekte/semrel/Resources/GermaNet/GN_V110_Lists/N_hypernyms.txt
+GermaNet Version 11:
+Birgit Hamp and Helmut Feldweg. Germanet - a lexical-semantic net for german. In Automatic information extraction and building of lexical semantic resources for NLP applications, pages 9–15, 1997
 
-WordNet Version 3: /resources/data/WordNet/WordNet-3.0_extract/hyp_nouns.txt
+/projekte/semrel/Resources/GermaNet/GN_V110_Lists/N_hypernyms.txt
+
+-------------
+
+WordNet Version 3:
+Christiane Fellbaum. Wordnet. The encyclopedia of applied linguistics, 1998
+
+/resources/data/WordNet/WordNet-3.0_extract/hyp_nouns.txt
+
+-------------
+
+Ghost-NN:
+Sabine Schulte im Walde, Anna Hätty, Stefan Bott, and Nana Khvtisavrishvili. Ghost-nn: A representative gold standard of german noun-noun compounds. In Proceedings of the Tenth International Conference on Language Resources and Evaluation (LREC’16), pages 2285–2292, 2016
+
+/projekte/semrel/WWW/Noun-Compounds/Ghost-NN/Ghost-NN_comp-means_expert.txt
+
+-------------
 
 BLESS, EVALution, Lenci/Benotto, Weeds:
-/projekte/semrel/Resources/Hypernymy/UnsupervisedHypernymy-MasterShwartz
+
+/projekte/semrel/Resources/Hypernymy/UnsupervisedHypernymy-MasterShwartz/datasets
+
+Marco Baroni and Alessandro Lenci. How we blessed distributional semantic evaluation. In Proceedings of the GEMS 2011 Workshop on GEometrical Models of Natural Language Semantics, pages 1–10. Association for Computational Linguistics, 2011
+
+Enrico Santus, Frances Yung, Alessandro Lenci, and Chu-Ren Huang. Evalution 1.0: an evolving semantic dataset for training and evaluation of distributional semantic models. In Proceedings of the 4th Workshop on Linked Data in Linguistics: Resources and Applications, pages 64–69, 2015
+
+Giulia Benotto. Distributional models for semantic relations: A study on hyponymy and antonymy. PhD thesis, University of Pisa, 2015
+
+Julie Weeds, Daoud Clarke, Jeremy Reffin, David Weir, and Bill Keller. Learning to distinguish hypernyms and co-hyponyms. In Proceedings of COLING 2014, the 25th International Conference on Computational Linguistics: Technical Papers, pages 2249–2259. Dublin City University and Association for Computational Linguistics, 2014
