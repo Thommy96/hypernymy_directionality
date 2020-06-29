@@ -1,5 +1,12 @@
 On the sever of Institut für Maschinelle Sprachverarbeitung, Stuttgart
 
-SdeWaC: /mount/resources/corpora/web-corpora/WaCKy/sdewac/source/sdewac-v3-utf8.tagged
+SdeWaC: 
+Gertrud Faaß and Kerstin Eckart. 2013. SdeWaC – A Corpus of Parsable Sentences from the Web. In Proceedings of the International Conference of the German Society for Computational Linguistics and Language Technology, pages 61–68, Darmstadt, Germany.
 
-PukWaC: /mount/resources/corpora/web-corpora/WaCKy/PukWaC/
+/mount/resources/corpora/web-corpora/WaCKy/sdewac/source/sdewac-v3-utf8.tagged
+
+
+PukWaC: 
+Adriano Ferraresi, Eros Zanchetta, Marco Baroni, and Silvia Bernardini. In- troducing and evaluating ukwac, a very large web-derived corpus of english. In Proceedings of the 4th Web as Corpus Workshop (WAC-4) Can we beat Google, pages 47–54, 2008
+
+/mount/resources/corpora/web-corpora/WaCKy/PukWaC/
