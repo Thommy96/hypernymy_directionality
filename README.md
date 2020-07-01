@@ -39,9 +39,9 @@ File paths for all data sets used in the thesis can be found in materials/datase
 All data sets are located on the server of the IMS (Institut für Maschinelle Sprachverarbeitung), Stuttgart
 
 ## Required packages
-- pickle
-- docopt
-- tqdm
-- sklearn
-- graphviz
+- pickle (to save and load files)
+- docopt (for command line interface)
+- tqdm (for processing bars)
+- sklearn (for classification)
+- graphviz (for drawing trees)
 - numpy
