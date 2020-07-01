@@ -14,7 +14,7 @@ For successfull usage, it is recommended to execute the scripts in the following
 4. Filter data set(s) (scripts/dataset_processing/)
   > - filter_dataset.py
 5. Optionally create subsets of data set(s) (scripts/dataset_processing/)
-  > - slices_freqBias.py
+  > - freqDiff_freqBias.py
 6. For SLQS, calculate Positive Local Mutual Information scores (scripts/dsm_creation/)
   > - plmi.py
 7. Calculate unsupervised hypernymy measures (scripts/measures/)
