@@ -8,56 +8,56 @@ from docopt import docopt
 
 def main():
     args = docopt("""Create 
-    - N slices sorted after relative frequency difference
-    - three additional slices with relative frequency difference >0, <0 and 0
-    - 11 sets with different frequency biases in steps of 10%
+    - N subsets sorted after relative frequency difference
+    - three additional subsets with relative frequency difference >0, <0 and 0
+    - 11 subsets with different frequency biases in steps of 10%
     and save as pickle files
     
     Usage:
-        slices_freqBias.py <results_freq> <dataset_file> <N_slices> <output_directory_slices> <output_directory_sets>
+        freqDiff_freqBias.py <results_freq> <dataset_file> <N_subsets> <output_directory_freqDiff> <output_directory_freqBias>
         
     Arguments:
         <results_freq> = pickled word frequency results
         <dataset_file> = pickled data set
-        <N_slices> = number of slices to create
-        <output_directory_slices> = directory to save pickled slices
-        <output_directory_sets> = directory to save pickled sets
+        <N_subsets> = number of subsets to create
+        <output_directory_freqDiff> = directory to save pickled subsets sorted after relative frequency difference
+        <output_directory_freqBias> = directory to save pickled subsets with different frequency biases
     
     """)
 
     #get arguments and options
     results_freq = args['<results_freq>']
     dataset_file = args['<dataset_file>']
-    N_slices = int(args['<N_slices>'])
-    output_directory_slices = args['<output_directory_slices>']
-    output_directory_sets = args['<output_directory_sets>']
+    N_subsets = int(args['<N_subsets>'])
+    output_directory_freqDiff = args['<output_directory_freqDiff>']
+    output_directory_freqBias = args['<output_directory_freqBias>']
 
     freqBias = FreqBias(results_freq, dataset_file)
-    print("Creating slices...")
-    subDicts = freqBias.divide(N_slices)
+    print("Creating subsets (frequency difference)...")
+    subDicts = freqBias.divide(N_subsets)
     i = 1
     for subDict in subDicts:
         sl = set(subDict.keys())
-        filenameSLice = str(output_directory_slices) + "/slice" + str(i) + ".p"
-        save_to_pickle(sl, filenameSLice)
+        filenameFreqDiff = str(output_directory_freqDiff) + "/freqDiff" + str(i) + ".p"
+        save_to_pickle(sl, filenameFreqDiff)
         i += 1
-    print("Created slices and saved")
+    print("Created subsets (frequency difference) and saved")
 
-    print("Creating additional slices...")
-    zeroSlices = freqBias.point_zero()
-    grTZ = zeroSlices[0]
-    zero = zeroSlices[1]
-    smTZ = zeroSlices[2]
-    filenamGrTZ = str(output_directory_slices) + "/greaterZero.p"
-    filenameZero = str(output_directory_slices) + "/zero.p"
-    filenameSmTZ = str(output_directory_slices) + "/smallerZero.p"
+    print("Creating additional subsets...")
+    zeroFreqDiff = freqBias.point_zero()
+    grTZ = zeroFreqDiff[0]
+    zero = zeroFreqDiff[1]
+    smTZ = zeroFreqDiff[2]
+    filenamGrTZ = str(output_directory_freqDiff) + "/greaterZero.p"
+    filenameZero = str(output_directory_freqDiff) + "/zero.p"
+    filenameSmTZ = str(output_directory_freqDiff) + "/smallerZero.p"
     save_to_pickle(grTZ, filenamGrTZ)
     save_to_pickle(zero, filenameZero)
     save_to_pickle(smTZ, filenameSmTZ)
-    print("Created additional slices and saved")
+    print("Created additional subsets and saved")
 
     #every run uniq because of random!!
-    print("Creating sets...")
+    print("Creating subsets (frequency bias)...")
     for i in range(0, 11):
         sizeGrTZ = len(smTZ) * (i/10)
         sizeSmTZ = len(smTZ) - sizeGrTZ
@@ -68,9 +68,9 @@ def main():
         randomSmTZ = set(random.sample(smTZ, k=sizeSmTZ))
         biasSet = randomGrTZ | randomSmTZ
 
-        filenameSet = str(output_directory_sets) + "/set" + str(i*10) + ".p"
+        filenameSet = str(output_directory_freqBias) + "/freqBias" + str(i*10) + ".p"
         save_to_pickle(biasSet, filenameSet)
-    print("Created sets and saved")
+    print("Created subsets (frequency bias) and saved")
 
 
 class FreqBias:
