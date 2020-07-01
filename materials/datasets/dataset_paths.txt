@@ -30,6 +30,6 @@ Marco Baroni and Alessandro Lenci. How we blessed distributional semantic evalua
 
 Enrico Santus, Frances Yung, Alessandro Lenci, and Chu-Ren Huang. Evalution 1.0: an evolving semantic dataset for training and evaluation of distributional semantic models. In Proceedings of the 4th Workshop on Linked Data in Linguistics: Resources and Applications, pages 64–69, 2015
 
-Giulia Benotto. Distributional models for semantic relations: A study on hyponymy and antonymy. PhD thesis, University of Pisa, 2015
+Alessandro Lenci and Giulia Benotto. Identifying hypernyms in distribu- tional semantic spaces. In * SEM 2012: The First Joint Conference on Lexical and Computational Semantics–Volume 1: Proceedings of the main conference and the shared task, and Volume 2: Proceedings of the Sixth International Workshop on Semantic Evaluation (SemEval 2012), pages 75–79, 2012
 
 Julie Weeds, Daoud Clarke, Jeremy Reffin, David Weir, and Bill Keller. Learning to distinguish hypernyms and co-hyponyms. In Proceedings of COLING 2014, the 25th International Conference on Computational Linguistics: Technical Papers, pages 2249–2259. Dublin City University and Association for Computational Linguistics, 2014
