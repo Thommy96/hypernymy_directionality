@@ -69,6 +69,8 @@ def readGermaNet(germaNet: str):
     wordPairsGermaNet = set()
 
     with open(germaNet) as germaNet:
+        # skip header line
+        next(germaNet)
         for line in germaNet:
             line = line.strip()
             line = line.split("\t")
