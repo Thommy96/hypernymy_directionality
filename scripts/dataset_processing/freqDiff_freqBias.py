@@ -112,9 +112,9 @@ class FreqBias:
 
     def divide(self, n:int):
         """
-        Divide sorted word pairs into slices
-        :param n: numver of slices
-        :return: list of slices as dictionaries
+        Divide sorted word pairs into subsets
+        :param n: number of subsets
+        :return: list of subsets as dictionaries
         """
         sortedFreqDiff = self.sort_freqDiff()
         sortedFreqDiffList = list(sortedFreqDiff.items())
