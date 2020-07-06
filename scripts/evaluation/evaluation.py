@@ -130,12 +130,11 @@ def main():
         with open(output_file_proportions[0], "w+") as propFile:
             for dataset in tqdm(datasets):
                 i = datasets.index(dataset)
-                propFile.write(names[i] + "\n\t")
-                for measure in measures:
-                    propFile.write(measure + "\t")
-                propFile.write("\n")
+                propFile.write(names[i] + "\n")
+                table = []
                 for measure1 in measures:
-                    propFile.write(measure1 + "\t")
+                    line = []
+                    line.append(measure1)
                     for measure2 in measures:
                         ev1 = evaluation.get_evaluation(measure1, dataset)
                         ev2 = evaluation.get_evaluation(measure2, dataset)
@@ -143,8 +142,9 @@ def main():
                         proportion1 = round(proportions[0], 3)
                         proportion2 = round(proportions[1], 3)
 
-                        propFile.write(str(proportion1) + "|" + str(proportion2) + "\t")
-                    propFile.write("\n")
+                        line.append(str(proportion1) + "|" + str(proportion2))
+                    table.append(line)
+                propFile.write(tabulate(table, headers=measures, tablefmt="plain"))
                 propFile.write("\n\n")
         print("Calculated intersection proportions")
 
