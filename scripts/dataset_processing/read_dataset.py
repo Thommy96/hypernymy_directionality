@@ -43,7 +43,7 @@ def main():
         print("Number of noun-noun pairs: " + str(len(dataset)))
         print(len(dataset))
         save_to_pickle(dataset, output_file_dataset)
-        print("Datas et saved")
+        print("Data set saved")
     if is_english:
         print("Reading data set...")
         dataset = read_englishStandard(input_file_dataset, input_file_dataset2)
@@ -69,8 +69,6 @@ def readGermaNet(germaNet: str):
     wordPairsGermaNet = set()
 
     with open(germaNet) as germaNet:
-        # skip header line
-        next(germaNet)
         for line in germaNet:
             line = line.strip()
             line = line.split("\t")
@@ -92,6 +90,8 @@ def readGhostNN(ghostNN: str):
     wordPairsGhostNN = set()
 
     with open(ghostNN) as ghostNN:
+        # skip header line
+        next(ghostNN)
         for line in ghostNN:
             line = line.strip()
             line = line.split("\t")
