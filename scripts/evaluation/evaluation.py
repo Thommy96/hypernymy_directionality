@@ -92,6 +92,7 @@ def main():
             table = []
             for measure in tqdm(measures):
                 line = []
+                line.append(measure)
                 for dataset in datasets:
                     ev = evaluation.get_evaluation(measure, dataset)
                     acc = ev[0]
