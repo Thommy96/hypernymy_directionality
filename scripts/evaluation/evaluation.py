@@ -123,31 +123,9 @@ def main():
 
                         line.append(smc)
                     table.append(line)
-                smcFile.write(tabulate(table, headers=measures))
+                smcFile.write(tabulate(table, headers=measures, tablefmt="plain"))
                 smcFile.write("\n\n")
         print("Calculated SMC correlations")
-
-#    if is_correlation:
- #       print("Calculating SMC correlations...")
-  #      with open(output_file_smc[0], "w+") as smcFile:
-   #         for dataset in tqdm(datasets):
-    #            i = datasets.index(dataset)
-     #           smcFile.write(names[i] + "\n\t")
-      #          for measure in measures:
-       #             smcFile.write(measure + "\t")
-        #        smcFile.write("\n")
-         #       for measure1 in measures:
-          #          smcFile.write(measure1 + "\t")
-           #         for measure2 in measures:
-            #            ev1 = evaluation.get_evaluation(measure1, dataset)
-             #           ev2 = evaluation.get_evaluation(measure2, dataset)
-              #          smc = evaluation.smc(ev1[3], ev2[3])
-               #         smc = round(smc, 3)
-#
- #                       smcFile.write(str(smc) + "\t")
-  #                  smcFile.write("\n")
-   #             smcFile.write("\n\n")
-    #    print("Calculated SMC correlations")
 
     if is_proportions:
         print("Calculating intersection proportions...")
