@@ -46,3 +46,4 @@ All data sets are located on the server of the IMS (Institut für Maschinelle Sp
 - sklearn (for classification)
 - graphviz (for drawing trees)
 - numpy
+- tabulate (for creating tables)
