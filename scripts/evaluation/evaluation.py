@@ -17,7 +17,7 @@ def main():
         <results_slqs> = pickled SLQS results
         <output_file_accuracy> = file to save accuracy (.txt)
         <output_file_smc> = file to save SMC (.txt)
-        <output_file_proportions> = file to save intersection proprtions (.txt), format: p1|p2
+        <output_file_proportions> = file to save intersection proprtions (.txt), table format: p1|p2
         <dataset_file> = pickled data set
         <name> = name of the data set
         
