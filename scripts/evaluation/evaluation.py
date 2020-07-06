@@ -89,20 +89,17 @@ def main():
     if is_accuracy:
         print("Calculating accuracy...")
         with open(output_file_accuracy[0], "w+") as accuracyFile:
-            accuracyFile.write("\t")
-            for name in names:
-                accuracyFile.write(name + "\t")
-            accuracyFile.write("\n")
+            table = []
             for measure in tqdm(measures):
-                accuracyFile.write(str(measure) + "\t")
+                line = []
                 for dataset in datasets:
                     ev = evaluation.get_evaluation(measure, dataset)
                     acc = ev[0]
                     acc = round(acc, 4)
 
-                    accuracyFile.write(str(acc) + "\t")
-
-                accuracyFile.write("\n")
+                    line.append(acc)
+                table.append(line)
+            accuracyFile.write(tabulate(table, headers=names, tablefmt="plain"))
         print("Calculated accuracy")
 
     if is_correlation:
