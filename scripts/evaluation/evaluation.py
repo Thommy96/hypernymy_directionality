@@ -110,7 +110,7 @@ def main():
         with open(output_file_smc[0], "w+") as smcFile:
             for dataset in tqdm(datasets):
                 i = datasets.index(dataset)
-                smcFile.write(names[i] + "\n\t")
+                smcFile.write(names[i] + "\n")
                 table = []
                 for measure1 in measures:
                     line = []
