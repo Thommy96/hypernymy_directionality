@@ -114,7 +114,7 @@ def main():
                     smcFile.write(measure + "\t")
                 smcFile.write("\n")
                 for measure1 in measures:
-                    smcFile.write(measure1 + "\t")
+                    smcFile.write(measure1 + "\t\t")
                     for measure2 in measures:
                         ev1 = evaluation.get_evaluation(measure1, dataset)
                         ev2 = evaluation.get_evaluation(measure2, dataset)
