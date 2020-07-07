@@ -3,7 +3,7 @@ Data and code for the experiments in: Thomas Bott, Comparative Evaluation of Uns
 Supervisors: Apl. Prof. Dr. Sabine Schulte im Walde, Dominik Schlechtweg
 
 ## Usage notes
-The scripts should be run directy from their directory with python3. Each script contains a usage pattern, which indicates how to use it. Further information about the arguments and options can be obtained with the -h (--help) option.
+The scripts should be run with python3. Each script contains a usage pattern, which indicates how to use it. Further information about the arguments and options can be obtained with the -h (--help) option.
 For successfull usage, it is recommended to execute the scripts in the following order:
 1. Create distributional semantic space(s) (scripts/dsm_creation/)
   > - dsm_creation.py 
