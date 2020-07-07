@@ -1,5 +1,5 @@
 # Hypernymy Directionality
-Data and code for the experiments in: Thomas Bott, Comparative Evaluation of Unsupervised Hypernymy Measures on the Directionality Task for English and German, B.Sc. Thesis, Institut für Maschinelle Sprachverarbeitung Stuttgart, 2020;
+Data and code for the experiments in: Thomas Bott, Comparative Evaluation of Unsupervised Hypernymy Measures on the Directionality Task for English and German, B.Sc. Thesis, Institut für Maschinelle Sprachverarbeitung, Universität Stuttgart, 2020;
 Supervisors: Apl. Prof. Dr. Sabine Schulte im Walde, Dominik Schlechtweg
 
 ## Usage notes
